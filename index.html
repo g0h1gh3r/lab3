@@ -10,23 +10,56 @@
   <body>
     <!-- Main container -->
     <div class="container">
-      <!-- Product header section -->
       <div class="product-header">
         <h1>Official Pace Car - 63rd Annual Indianapolis 500 Mile Race</h1>
-        <div class="model-number">Greenlight 30166/48 - 1/64 Scale</div>
+        <div>Greenlight 30166/48 - 1/64 Scale</div>
       </div>
 
-      <!-- Product display section -->
-      <div class="product-display">
-        <!-- Product image container -->
+      <div class="content-grid">
         <div class="product-image">
           <img src="car.jpg" alt="1979 Ford Mustang Indy 500 Pace Car" />
+          <div class="controls-section">
+            <h3>Customize Model</h3>
+            <div class="control-group">
+              <label for="condition">Condition Grade:</label>
+              <select
+                id="condition"
+                onchange="updateModelCondition(this.value)"
+              >
+                <option value="mint">Mint (100%)</option>
+                <option value="nearMint">Near Mint (90%)</option>
+                <option value="excellent">Excellent (80%)</option>
+                <option value="good">Good (70%)</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label for="packaging">Packaging Type:</label>
+              <select id="packaging" onchange="updatePackaging(this.value)">
+                <option value="blisterPack">Blister Pack</option>
+                <option value="boxed">Boxed</option>
+                <option value="loose">Loose</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label for="certification">Certification:</label>
+              <select
+                id="certification"
+                onchange="updateCertification(this.value)"
+              >
+                <option value="none">None</option>
+                <option value="graded">Graded</option>
+                <option value="authenticated">Authenticated</option>
+              </select>
+            </div>
+          </div>
         </div>
 
-        <!-- Product details panel -->
         <div class="product-details">
-          <div id="carSpecs"></div>
-          <button onclick="toggleDetails()">View Additional Details</button>
+          <div id="specsDisplay"></div>
+          <div class="modifications-panel" id="modificationsPanel">
+            <h3>Custom Modifications</h3>
+            <div id="modificationsList"></div>
+          </div>
         </div>
       </div>
     </div>

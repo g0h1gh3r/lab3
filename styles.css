@@ -1,4 +1,4 @@
-/* Reset default styles and set base font */
+/* Base styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,58 +6,48 @@
   font-family: 'Arial', sans-serif;
 }
 
-/* Base page styling */
 body {
-  background: #f5f5f5; /* Light gray background for contrast */
+  background: #f5f5f5;
   padding: 2rem;
+  color: #333;
 }
 
-/* Main container with max width for larger screens */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Product header styling */
+/* Header styles */
 .product-header {
   text-align: center;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
 }
 
-/* Main title styling */
 .product-header h1 {
-  color: #1a237e; /* Deep blue for brand identity */
+  color: #1a237e;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
-/* Model number styling */
-.product-header .model-number {
-  color: #666;
-  font-size: 1.1rem;
-}
-
-/* Product display grid layout */
-.product-display {
+/* Main content grid */
+.content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-/* Product image container */
+/* Product image and details */
 .product-image {
   background: #f8f9fa;
   padding: 2rem;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  width: 400px;
+  text-align: center;
 }
 
 .product-image img {
@@ -65,27 +55,72 @@ body {
   height: auto;
 }
 
-/* Product details panel */
 .product-details {
-  padding: 1rem;
   background: #f8f9fa;
+  padding: 2rem;
   border-radius: 8px;
 }
 
-/* Specifications section styling */
-.specs-section {
-  margin-bottom: 2rem;
+/* Interactive controls */
+.controls-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Section headers */
-.specs-section h2 {
-  color: #1a237e;
+.control-group {
   margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #ddd;
 }
 
-/* Individual specification items */
+.control-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1a237e;
+  font-weight: bold;
+}
+
+/* Form controls */
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.button {
+  background: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #0d1b60;
+}
+
+.button.secondary {
+  background: #666;
+}
+
+.button.secondary:hover {
+  background: #444;
+}
+
+/* Specification display */
+.specs-display {
+  margin-top: 1rem;
+}
+
 .spec-item {
   display: flex;
   justify-content: space-between;
@@ -95,38 +130,34 @@ body {
   border-radius: 4px;
 }
 
-/* Price display styling */
+/* Price display */
 .price-display {
   font-size: 1.5rem;
   color: #1a237e;
   text-align: right;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
 }
 
-/* Button styling */
-button {
-  background: #1a237e;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 100%;
+/* Collection status */
+.collector-status {
   margin-top: 1rem;
-}
-
-/* Button hover effect */
-button:hover {
-  background: #0d1b60;
-}
-
-/* Collector's note styling */
-.collector-note {
-  margin-top: 2rem;
   padding: 1rem;
-  background: #fff3e0; /* Warm background for emphasis */
+  background: #fff3e0;
   border-radius: 4px;
   font-size: 0.9rem;
   color: #634100;
+}
+
+/* Modifications panel */
+.modifications-panel {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e8f5e9;
+  border-radius: 4px;
+  display: none;
+}
+
+.modifications-panel.active {
+  display: block;
 }
