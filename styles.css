@@ -21,3 +21,22 @@ body {
   border-radius: 12px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
+/* Product header styling */
+.product-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Main title styling */
+.product-header h1 {
+  color: #1a237e; /* Deep blue for brand identity */
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Model number styling */
+.product-header .model-number {
+  color: #666;
+  font-size: 1.1rem;
+}
