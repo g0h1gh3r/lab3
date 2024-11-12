@@ -6,4 +6,7 @@ function MyCar(config) {
   this.model = 'Mustang'
   this.year = 1979
   this.scale = '1:64'
+  // Event and historical information
+  this.event = '63rd Annual Indianapolis 500 Mile Race'
+  this.colors = ['White', 'Black']
 }
