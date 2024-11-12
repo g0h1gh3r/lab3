@@ -11,3 +11,13 @@ body {
   background: #f5f5f5; /* Light gray background for contrast */
   padding: 2rem;
 }
+
+/* Main container with max width for larger screens */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
