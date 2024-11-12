@@ -114,3 +114,13 @@ button {
 button:hover {
   background: #0d1b60;
 }
+
+/* Collector's note styling */
+.collector-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff3e0; /* Warm background for emphasis */
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #634100;
+}
