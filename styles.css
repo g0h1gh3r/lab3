@@ -40,3 +40,21 @@ body {
   color: #666;
   font-size: 1.1rem;
 }
+
+/* Product display grid layout */
+.product-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 2rem;
+}
+
+/* Product image container */
+.product-image {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
