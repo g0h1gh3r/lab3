@@ -30,4 +30,20 @@ function MyCar(config) {
   this.getFullName = function () {
     return `${this.year} ${this.make} ${this.model}`
   }
+
+  /**
+   * Returns the complete color scheme
+   * @returns {string} Color combination
+   */
+  this.getColorScheme = function () {
+    return this.colors.join(' and ')
+  }
+
+  /**
+   * Returns the collector status
+   * @returns {string} Edition type
+   */
+  this.getCollectorValue = function () {
+    return this.limitedEdition ? 'Limited Edition' : 'Standard Release'
+  }
 }
