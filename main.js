@@ -22,4 +22,12 @@ function MyCar(config) {
   this.limitedEdition = true
   this.productionRun = 4800
   this.basePrice = 29.99
+
+  /**
+   * Returns the full name of the vehicle
+   * @returns {string} Complete vehicle name
+   */
+  this.getFullName = function () {
+    return `${this.year} ${this.make} ${this.model}`
+  }
 }
