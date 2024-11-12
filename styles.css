@@ -88,3 +88,11 @@ body {
   margin-bottom: 0.5rem;
   border-radius: 4px;
 }
+
+/* Price display styling */
+.price-display {
+  font-size: 1.5rem;
+  color: #1a237e;
+  text-align: right;
+  margin-bottom: 1rem;
+}
