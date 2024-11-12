@@ -58,3 +58,15 @@ body {
   justify-content: center;
   height: 300px;
 }
+
+/* Product details panel */
+.product-details {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Specifications section styling */
+.specs-section {
+  margin-bottom: 2rem;
+}
